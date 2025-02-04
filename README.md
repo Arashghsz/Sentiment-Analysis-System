@@ -434,7 +434,8 @@ Tests are configured to:
 ## Video Demo
 
 [Watch the demo on YouTube](your-youtube-link)
-
+## Output
+![Project Logo](output.png)
 ## License
 
 MIT License
