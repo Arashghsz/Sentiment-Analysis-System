@@ -76,6 +76,40 @@ npm start
 
 The application will be available at http://localhost:3001
 
+## Project Structure
+
+```
+sentiment-analysis-system/
+├── client/                     # Frontend React application
+│   ├── public/                # Static files
+│   ├── src/                   # React source files
+│   │   ├── components/        # React components
+│   │   ├── hooks/            # Custom React hooks
+│   │   ├── services/         # API services
+│   │   └── App.js            # Main React component
+│   ├── package.json          # Frontend dependencies
+│   └── .env                  # Frontend environment variables
+├── tests/                    # Backend tests
+│   └── api.test.js          # API endpoint tests
+├── server.js                # Express server and API endpoints
+├── package.json            # Backend dependencies
+├── .env                    # Backend environment variables
+├── .gitignore             # Git ignore rules
+├── README.md              # Project documentation
+├── docker-compose.yml     # Docker compose configuration
+└── Dockerfile             # Docker container configuration
+```
+
+### Key Files
+
+- `server.js`: Main backend application with Express routes and model integration
+- `tests/api.test.js`: API endpoint tests using Jest and Supertest
+- `client/src/services/api.js`: Frontend API integration
+- `client/src/components/`: React components for UI
+- `.env`: Configuration for API keys and environment variables
+- `docker-compose.yml`: Multi-container Docker setup
+- `Dockerfile`: Container build instructions
+
 ## API Endpoints
 
 ### POST /analyze
@@ -405,7 +439,7 @@ Tests are configured to:
 
 MIT License
 
-Copyright (c) 2024 Arash Ghasemzadeh Kakroudi
+Copyright (c) 2025 Arash Ghasemzadeh Kakroudi
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
