@@ -388,16 +388,7 @@ You can also test the API endpoints manually using curl:
 
 1. Test Custom Model:
 ```bash
-curl -X POST http://localhost:3000/analyze \
-  -H "Content-Type: application/json" \
-  -d '{"text": "This movie was fantastic!", "model": "custom"}'
-```
-
-2. Test Llama Model:
-```bash
-curl -X POST http://localhost:3000/analyze \
-  -H "Content-Type: application/json" \
-  -d '{"text": "I really hated this product.", "model": "llama"}'
+curl -X POST http://localhost:3000/analyze -H "Content-Type: application/json" -d "{\"text\":\"This movie was fantastic!\",\"model\":\"custom\"}"
 ```
 
 3. Test Health Check:
@@ -433,7 +424,7 @@ Tests are configured to:
 
 ## Video Demo
 
-[Watch the demo on YouTube](your-youtube-link)
+[Watch the demo on YouTube](https://www.youtube.com/watch?v=uJmQum-qjiQ)
 ## Output
 ![Project Logo](output.png)
 ## License
